@@ -3,10 +3,13 @@ Accessing our posterior samples
 
 As part of this data release, we include 2 files,
 
-* `Hannam-v1-GW200129_065458_PEDataRelease.h5`
+* `Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5`
     * This file contains posterior samples obtained in our analysis of GW200129_065458. We store the posterior samples with the label :code:`C01:NRSur7dq4`.
 
-* `Hannam-v1-GW200129_065458_ZeroNoiseInjections.h5`
+* `Nature.xxx.yyy.2022-v1-GW200129_065458_VaryingDetectorNetwork.h5`
+    * This file contains posterior samples obtained in our analysis of GW200129_065458 for different detector networks. The :code:`HLV` dataset presents the posterior samples obtained for a LIGO-Hanford, LIGO-Livingston and Virgo detector network, :code:`HV` for a LIGO-Hanford and Virgo detector network and :code:`LV` for a LIGO-Livingston and Virgo detector network.
+
+* `Nature.xxx.yyy.2022-v1-GW200129_065458_ZeroNoiseInjection.h5`
     * This file contains posterior samples obtained when analysing a theoretical signal from a precessing binary with our best-estimate parameters of GW200129_065458 (i.e. those with the maximum likelihood in our analysis) as it would be observed in a network of detectors with the same frequency-dependent sensitivity, but with no noise. The :code:`HLV` dataset presents the posterior samples obtained for a LIGO-Hanford, LIGO-Livingston and Virgo detector network, :code:`HV` for a LIGO-Hanford and Virgo detector network and :code:`LV` for a LIGO-Livingston and Virgo detector network.
 
 .. note::
