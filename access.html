@@ -192,8 +192,8 @@ waveform model.</p>
 <p>Our posterior samples are stored on <a class="reference external" href="https://zenodo.org/">Zenodo</a>. To
 download our posterior samples,</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="73197428-4943-41c2-92a0-9efbd2856322" name="64effb07-2134-46a9-8b51-e715487c0807" type="radio">
-</input><label class="tabbed-label" for="73197428-4943-41c2-92a0-9efbd2856322">
+<input checked="checked" id="10ea5f63-8db6-4956-85df-c52423e9fff8" name="c96b15d9-92c3-47a4-992a-6e83e14142a9" type="radio">
+</input><label class="tabbed-label" for="10ea5f63-8db6-4956-85df-c52423e9fff8">
 Python</label><div class="tabbed-content docutils">
 <p>we recommend using
 <a class="reference external" href="https://lscsoft.docs.ligo.org/pesummary/stable_docs/installation.html">PESummary</a>
@@ -206,21 +206,20 @@ We can download and read the files with the following,</p>
     <span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;./&quot;</span><span class="p">,</span>
     <span class="n">download_kwargs</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;timeout&quot;</span><span class="p">:</span> <span class="mi">60</span><span class="p">},</span>
 <span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The files are then downloaded into your current working directory and the
 posterior samples can be accessed via the <code class="code docutils literal notranslate"><span class="pre">data</span></code> object.</p>
 </div>
-<input id="47f58420-28a1-4e08-94ce-ebaafb06a82a" name="64effb07-2134-46a9-8b51-e715487c0807" type="radio">
-</input><label class="tabbed-label" for="47f58420-28a1-4e08-94ce-ebaafb06a82a">
+<input id="421a06c1-0fbb-428e-b597-bc1ede203b13" name="c96b15d9-92c3-47a4-992a-6e83e14142a9" type="radio">
+</input><label class="tabbed-label" for="421a06c1-0fbb-428e-b597-bc1ede203b13">
 bash</label><div class="tabbed-content docutils">
 <p>we recommend using <code class="code docutils literal notranslate"><span class="pre">zendo_get</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install zenodo_get
 zenodo-get XXX
 </pre></div>
 </div>
-<p>This will download both files included in this data release. To download a
+<p>This will download all files included in this data release. To download a
 single file, we recommend using <code class="code docutils literal notranslate"><span class="pre">cURL</span></code>,</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl
 </pre></div>

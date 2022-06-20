@@ -36,7 +36,6 @@ download our posterior samples,
             outdir="./",
             download_kwargs={"timeout": 60},
         )
-        print(data)
 
     The files are then downloaded into your current working directory and the
     posterior samples can be accessed via the :code:`data` object.
@@ -50,7 +49,7 @@ download our posterior samples,
         pip install zenodo_get
         zenodo-get XXX
 
-    This will download both files included in this data release. To download a
+    This will download all files included in this data release. To download a
     single file, we recommend using :code:`cURL`,
 
     .. code-block:: bash
