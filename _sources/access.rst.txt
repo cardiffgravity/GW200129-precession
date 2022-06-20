@@ -1,7 +1,7 @@
 Accessing our posterior samples
 ===============================
 
-As part of this data release, we include 2 files,
+As part of this data release, we include 3 files,
 
 * `Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5`
     * This file contains posterior samples obtained in our analysis of GW200129_065458. We store the posterior samples with the label :code:`C01:NRSur7dq4`.
