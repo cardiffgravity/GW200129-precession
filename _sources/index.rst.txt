@@ -15,6 +15,7 @@ Virgo collaborations
 :sup:`*Corresponding author(s). E-mail(s): hannammd@cardiff.ac.uk`
 
 .. image:: https://licensebuttons.net/l/by/4.0/88x31.png
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.6672460.svg
 
 This page contains the data release associated with the publication
 `Measurement of general-relativistic precession in a black-hole binary <https://arxiv.org/abs/2112.11300>`_

@@ -5,6 +5,8 @@ Mark Hannam <sup>1*</sup>, Charlie Hoy <sup>1</sup>, Jonathan E. Thompson <sup>1
 <sub>1. Gravity Exploration Institute, Cardiff University, The Parade, Cardiff, CF24 3AA , UK.</sub><br>
 <sub>*Corresponding author(s). E-mail(s): hannammd@cardiff.ac.uk</sub>
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6672460.svg)](https://doi.org/10.5281/zenodo.6672460)
+
 ## Introduction
 
 This page contains the data release associated with the publication
