@@ -1,0 +1,63 @@
+.. GW200129-precession documentation master file, created by
+   sphinx-quickstart on Sun Jun 19 23:46:23 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Measurement of general-relativistic precession in a black-hole binary - data release
+====================================================================================
+
+Mark Hannam :sup:`1*`, Charlie Hoy :sup:`1`, Jonathan E. Thompson :sup:`1`,
+Stephen Fairhurst :sup:`1`, Vivien Raymond :sup:`1` and members of the LIGO and
+Virgo collaborations
+
+:sup:`1. Gravity Exploration Institute, Cardiff University, The Parade, Cardiff, CF24 3AA , UK.`
+|br|
+:sup:`*Corresponding author(s). E-mail(s): hannammd@cardiff.ac.uk`
+
+.. image:: https://licensebuttons.net/l/by/4.0/88x31.png
+
+This page contains the data release associated with the publication
+`Measurement of general-relativistic precession in a black-hole binary <https://arxiv.org/abs/2112.11300>`_
+from Hannam, M. *et al.* In this publication we show that one of the events in the
+`most recent LIGO-Virgo-Kagra (LVK) data release <https://arxiv.org/abs/2111.03606>`_
+exhibits general relativistic orbital precession. The event is GW200129_065458.
+
+Here, we release the posterior samples (:code:`*.h5`) that were obtained in this
+analysis. The gravitational-wave strain data, power spectral densitites and
+calibration envelopes can all be accessed via the Gravitational Wave Open
+Science Center (https://www.gw-openscience.org), a service of LIGO Laboratory,
+the LIGO Scientific Collaboration and the Virgo Collaboration. To access
+these files see,
+
+.. toctree::
+
+    access
+
+We encourage use of these data in future work. If you use the material
+provided here, please cite the paper using the reference:
+
+.. tabbed:: BibTeX
+
+    .. code-block:: bibtex
+
+        @article{Hannam:2021pit,
+            author = "Hannam, Mark and Hoy, Charlie and Thompson, Jonathan E. and Fairhurst, Stephen and Raymond, Vivien and {members of the LIGO and Virgo collaborations}",
+            title = "{Measurement of general-relativistic precession in a black-hole binary}",
+            eprint = "2112.11300",
+            archivePrefix = "arXiv",
+            primaryClass = "gr-qc",
+            reportNumber = "LIGO-P2100452",
+            month = "12",
+            year = "2021"
+        }
+
+.. |br| raw:: html
+
+      <br>
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

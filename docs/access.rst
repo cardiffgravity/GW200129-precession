@@ -1,0 +1,59 @@
+Accessing our posterior samples
+===============================
+
+As part of this data release, we include 2 files,
+
+* `Hannam-v1-GW200129_065458_PEDataRelease.h5`
+    * This file contains posterior samples obtained in our analysis of GW200129_065458. We store the posterior samples with the label :code:`C01:NRSur7dq4`.
+
+* `Hannam-v1-GW200129_065458_ZeroNoiseInjections.h5`
+    * This file contains posterior samples obtained when analysing a theoretical signal from a precessing binary with our best-estimate parameters of GW200129_065458 (i.e. those with the maximum likelihood in our analysis) as it would be observed in a network of detectors with the same frequency-dependent sensitivity, but with no noise. The :code:`HLV` dataset presents the posterior samples obtained for a LIGO-Hanford, LIGO-Livingston and Virgo detector network, :code:`HV` for a LIGO-Hanford and Virgo detector network and :code:`LV` for a LIGO-Livingston and Virgo detector network.
+
+.. note::
+
+    Both files contain posterior samples obtained with the :code:`NRSur7dq4`
+    waveform model.
+
+Our posterior samples are stored on `Zenodo <https://zenodo.org/>`_. To
+download our posterior samples,
+
+.. tabbed:: Python
+
+    we recommend using
+    `PESummary <https://lscsoft.docs.ligo.org/pesummary/stable_docs/installation.html>`_
+    We can download and read the files with the following,
+
+    .. code-block:: python
+
+        from pesummary.core.fetch import download_and_read_file
+        data = download_and_read_file(
+            "https://www.google.co.uk",
+            read_file=True,
+            delete_on_exit=False,
+            outdir="./",
+            download_kwargs={"timeout": 60},
+        )
+        print(data)
+
+    The files are then downloaded into your current working directory and the
+    posterior samples can be accessed via the :code:`data` object.
+
+.. tabbed:: bash
+
+    we recommend using :code:`zendo_get`:
+
+    .. code-block:: bash
+
+        pip install zenodo_get
+        zenodo-get XXX
+
+    This will download both files included in this data release. To download a
+    single file, we recommend using :code:`cURL`,
+
+    .. code-block:: bash
+
+        curl 
+
+
+Both sets of posterior samples are formatted using
+`PESummary <https://lscsoft.docs.ligo.org/pesummary/index.html>`_.
