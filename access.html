@@ -192,15 +192,17 @@ waveform model.</p>
 <p>Our posterior samples are stored on <a class="reference external" href="https://zenodo.org/">Zenodo</a>. To
 download our posterior samples,</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="10ea5f63-8db6-4956-85df-c52423e9fff8" name="c96b15d9-92c3-47a4-992a-6e83e14142a9" type="radio">
-</input><label class="tabbed-label" for="10ea5f63-8db6-4956-85df-c52423e9fff8">
+<input checked="checked" id="226f6ead-aeea-4042-9cd5-06af0b166fa4" name="30fd231d-b340-4c7d-a07d-929c33c4212c" type="radio">
+</input><label class="tabbed-label" for="226f6ead-aeea-4042-9cd5-06af0b166fa4">
 Python</label><div class="tabbed-content docutils">
 <p>we recommend using
 <a class="reference external" href="https://lscsoft.docs.ligo.org/pesummary/stable_docs/installation.html">PESummary</a>
-We can download and read the files with the following,</p>
+We can download and read e.g.
+<cite>Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5</cite> with the
+following,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pesummary.core.fetch</span> <span class="kn">import</span> <span class="n">download_and_read_file</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">download_and_read_file</span><span class="p">(</span>
-    <span class="s2">&quot;https://www.google.co.uk&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;https://zenodo.org/api/files/51eb1ac0-f3ba-41a2-8c1a-2c5107734d4e/Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5&quot;</span><span class="p">,</span>
     <span class="n">read_file</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">delete_on_exit</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
     <span class="n">outdir</span><span class="o">=</span><span class="s2">&quot;./&quot;</span><span class="p">,</span>
@@ -208,20 +210,21 @@ We can download and read the files with the following,</p>
 <span class="p">)</span>
 </pre></div>
 </div>
-<p>The files are then downloaded into your current working directory and the
-posterior samples can be accessed via the <code class="code docutils literal notranslate"><span class="pre">data</span></code> object.</p>
+<p>The file is then downloaded into your current working directory and the
+posterior samples can be accessed via the <code class="code docutils literal notranslate"><span class="pre">data</span></code> object. To download
+all files in this data release, simply loop over the file names above.</p>
 </div>
-<input id="421a06c1-0fbb-428e-b597-bc1ede203b13" name="c96b15d9-92c3-47a4-992a-6e83e14142a9" type="radio">
-</input><label class="tabbed-label" for="421a06c1-0fbb-428e-b597-bc1ede203b13">
+<input id="05aeeadd-9e4f-4c73-8d5f-e942177ab453" name="30fd231d-b340-4c7d-a07d-929c33c4212c" type="radio">
+</input><label class="tabbed-label" for="05aeeadd-9e4f-4c73-8d5f-e942177ab453">
 bash</label><div class="tabbed-content docutils">
-<p>we recommend using <code class="code docutils literal notranslate"><span class="pre">zendo_get</span></code>:</p>
+<p>we recommend using <code class="code docutils literal notranslate"><span class="pre">zenodo_get</span></code>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install zenodo_get
-zenodo-get XXX
+zenodo_get <span class="m">6672460</span>
 </pre></div>
 </div>
 <p>This will download all files included in this data release. To download a
 single file, we recommend using <code class="code docutils literal notranslate"><span class="pre">cURL</span></code>,</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl https://zenodo.org/api/files/51eb1ac0-f3ba-41a2-8c1a-2c5107734d4e/Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5 -o ./Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5
 </pre></div>
 </div>
 </div>

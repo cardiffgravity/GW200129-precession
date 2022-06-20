@@ -24,38 +24,40 @@ download our posterior samples,
 
     we recommend using
     `PESummary <https://lscsoft.docs.ligo.org/pesummary/stable_docs/installation.html>`_
-    We can download and read the files with the following,
+    We can download and read e.g.
+    `Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5` with the
+    following,
 
     .. code-block:: python
 
         from pesummary.core.fetch import download_and_read_file
         data = download_and_read_file(
-            "https://www.google.co.uk",
+            "https://zenodo.org/api/files/51eb1ac0-f3ba-41a2-8c1a-2c5107734d4e/Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5",
             read_file=True,
             delete_on_exit=False,
             outdir="./",
             download_kwargs={"timeout": 60},
         )
 
-    The files are then downloaded into your current working directory and the
-    posterior samples can be accessed via the :code:`data` object.
+    The file is then downloaded into your current working directory and the
+    posterior samples can be accessed via the :code:`data` object. To download
+    all files in this data release, simply loop over the file names above.
 
 .. tabbed:: bash
 
-    we recommend using :code:`zendo_get`:
+    we recommend using :code:`zenodo_get`:
 
     .. code-block:: bash
 
         pip install zenodo_get
-        zenodo-get XXX
+        zenodo_get 6672460
 
     This will download all files included in this data release. To download a
     single file, we recommend using :code:`cURL`,
 
     .. code-block:: bash
 
-        curl 
-
+        curl https://zenodo.org/api/files/51eb1ac0-f3ba-41a2-8c1a-2c5107734d4e/Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5 -o ./Nature.xxx.yyy.2022-v1-GW200129_065458_PEDataRelease.h5
 
 Both sets of posterior samples are formatted using
 `PESummary <https://lscsoft.docs.ligo.org/pesummary/index.html>`_.
