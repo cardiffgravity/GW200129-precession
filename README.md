@@ -16,7 +16,7 @@ This page contains the data release associated with the publication
 
 This work is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-We encourage use of these data in derivative works. If you use the material provided here, please cite the paper using the reference:
+We encourage use of these data in derivative works. If you use the material provided here, please cite the paper and data release using the references:
 
 ```
 @article{Hannam:2021pit,
@@ -28,5 +28,22 @@ We encourage use of these data in derivative works. If you use the material prov
     reportNumber = "LIGO-P2100452",
     month = "12",
     year = "2021"
+}
+
+@dataset{hannam_mark_2022_6672460,
+    author       = {Hannam, Mark and
+                    Hoy, Charlie and
+                    Thompson, Jonathan E. and
+                    Fairhurst, Stephen and
+                    Raymond, Vivien and
+                    and members of the LIGO and Virgo collaborations},
+    title        = {{Measurement of general-relativistic precession in
+                     a black-hole binary - data release}},
+    month        = jun,
+    year         = 2022,
+    publisher    = {Zenodo},
+    version      = {0.1.0},
+    doi          = {10.5281/zenodo.6672460},
+    url          = {https://doi.org/10.5281/zenodo.6672460}
 }
 ```
