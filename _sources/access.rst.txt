@@ -17,7 +17,7 @@ As part of this data release, we include 3 files,
     All files contain posterior samples obtained with the :code:`NRSur7dq4`
     waveform model.
 
-Our posterior samples are stored on `Zenodo <https://zenodo.org/>`_. To
+Our posterior samples are stored on `Zenodo <https://zenodo.org/record/6672460#.YrDVr7aZOlN>`_. To
 download our posterior samples,
 
 .. tabbed:: Python
