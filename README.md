@@ -10,7 +10,7 @@ Mark Hannam <sup>1*</sup>, Charlie Hoy <sup>1</sup>, Jonathan E. Thompson <sup>1
 ## Introduction
 
 This page contains the data release associated with the publication
-[Measurement of general-relativistic precession in a black-hole binary](https://arxiv.org/abs/2112.11300) from Hannam, M. _et al._ For instructions about how to download the data, please see the [public documentation](https://hoyc1.github.io/GW200129-precession/).
+[Measurement of general-relativistic precession in a black-hole binary](https://arxiv.org/abs/2112.11300) from Hannam, M. _et al._ For instructions about how to download the data, please see the [public documentation](https://data.cardiffgravity.org/GW200129-precession/).
 
 ## License and Citation
 
